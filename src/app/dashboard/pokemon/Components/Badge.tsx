@@ -1,12 +1,12 @@
 import { SimplePokemon } from '@/app/Interfaces/SimplePokemon'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Badge = ({name, url, id}:SimplePokemon) => {
 
-
   return (
-    <div className='w-full h-full border-2 border-gray-300 pb-4'>
+    <div className='w-full h-full border-2 border-gray-300 pb-4 bg-violet-100'>
         <div className='h-5/6'>
             <section className='h-4/6 grid place-content-center'>
                <Image 
@@ -14,14 +14,15 @@ const Badge = ({name, url, id}:SimplePokemon) => {
                 alt="as" 
                 width={120}
                 height={120}
+                priority={false}
                 />
             </section>
             <section className='h-2/6 w-full grid place-items-center'>
                 <article className='capitalize'>
                     {name}
                 </article>
-                <article className='w-36 rounded-lg border-2 border-gray-400 grid place-content-center'>
-                    mas info
+                <article className='w-36 rounded-lg border-2 border-gray-400 grid place-content-center hover:bg-blue-500'>
+                    <Link href={`/dashboard/pokemon/${id}`}>Mas informacion</Link>
                 </article>
             </section>
         </div>

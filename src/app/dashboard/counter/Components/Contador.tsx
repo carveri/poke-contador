@@ -6,7 +6,7 @@ const Contador = () => {
 
     const [contador, setContador] = useState(0)
 
-    const handleClickContador = (e)=>{
+    const handleClickContador = (e:any)=>{
         if(e.target.name === 'suma'){
             setContador(contador + 1)
         }
@@ -19,7 +19,7 @@ const Contador = () => {
     }
 
   return (
-    <section className='w-80 h-80  grid grid-row-2 mt-60 border-2 border-blue-600 bg-gray-600'>
+    <section className='w-80 h-80  grid grid-row-2 mt-60 border-2 border-blue-600 bg-gray-600 md:w-96 lg:w-96"'>
           <header className='w-full h-20  grid place-content-center text-2xl'>
             {contador}
           </header>

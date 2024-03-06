@@ -2,15 +2,11 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { SidebarMenuItem } from "../Interfaces/Sidebar/interSidebar"
 
-interface Props {
-    path: string
-    title: string
-    subTitle: string
-    icon: JSX.Element
-}
 
-const SideMenuItem = ({path, title, subTitle, icon}: Props) => {
+
+const SideMenuItem = ({path, title, subTitle, icon}:SidebarMenuItem) => {
 
     const currentPath = usePathname()
 
