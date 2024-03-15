@@ -6,7 +6,7 @@ import { SidebarMenuItem } from "../Interfaces/Sidebar/interSidebar"
 
 
 
-const SideMenuItem = ({path, title, subTitle, icon}:SidebarMenuItem) => {
+const SideMenuItem = ({path, title, subTitle}:SidebarMenuItem) => {
 
     const currentPath = usePathname()
 

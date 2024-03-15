@@ -33,13 +33,13 @@ const Sidebar = () => {
            </div>
            <div id="nav" className="w-full px-6">
             {dataSidebar.map((element)=>{
-                const {path, icon, title, subTitle} = element
+                const {path, title, subTitle} = element
                 return <SideMenuItem
                     key={path}
                     path={path}
                     title={title}
                     subTitle={subTitle}
-                    icon={icon}
+                    
             />
             })}
            </div>
