@@ -1,13 +1,7 @@
 import { IoLogoReact, IoLogoChrome } from 'react-icons/io5'
 
 export const dataSidebar = [
-    {
-        id:1,
-        path: '/dashboard',
-        icon: <IoLogoReact size={40}/>,
-        title: 'Dashboard',
-        subTitle: 'Soy el dash'
-    },
+   
     {
         id:2,
         path: '/dashboard/counter',

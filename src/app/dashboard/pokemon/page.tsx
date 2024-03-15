@@ -3,6 +3,7 @@ import React from 'react'
 import Badge from './Components/Badge'
 
 
+
 const page = async() => {
 
   
@@ -15,6 +16,8 @@ const page = async() => {
     //   const id = element.url.split('/').at(-2)
 
     // })
+
+  
 
   return (
     <div className='w-screen h-screen '>

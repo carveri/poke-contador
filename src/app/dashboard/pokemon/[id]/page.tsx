@@ -14,7 +14,8 @@ const page = async({params}:InterParams) => {
     const pokemon = await getOneData({num})
 
     //console.log(pokemon);
-    
+
+
 
   return (
     <div className='w-screen h-screen  grid place-items-center'>
